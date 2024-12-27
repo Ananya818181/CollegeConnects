@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnects</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2C2C2C;
+            background-color: #F5F7FA;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #3D52A0, #7091E6);
+            color: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8697C4;
+        }
+
+        .hero {
+            position: relative;
+            height: 280px;
+            background: linear-gradient(135deg, #3D52A0, #7091E6), url('hero-image.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons button {
+            background: #ADBBD8;
+            color: #3D52A0;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .cta-buttons button:hover {
+            transform: scale(1.1);
+            background-color: #8697C4;
+        }
+
+        .main-body {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .event-card h3 {
+            margin: 15px 0;
+            font-size: 1.2em;
+            padding: 0 20px;
+        }
+
+        footer {
+            background-color: #3D52A0;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-top: 5px solid #ADBBD8;
+        }
+
+        footer .social-media a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ADBBD8;
+            font-size: 1.2em;
+            transition: transform 0.2s ease;
+        }
+
+        footer .social-media a:hover {
+            transform: scale(1.2);
+        }
+
+        footer a {
+            color: #ADBBD8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">CampusConnects</div>
+    <nav>
+        <ul>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#organizers">Organizers</a></li>
+            <li><a href="#login">Login/Signup</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Welcome to CampusConnects</h1>
+    <p>Your one-stop platform for college events and community building!</p>
+    <div class="cta-buttons">
+        <button>Explore Events</button>
+        <button>Host an Event</button>
+    </div>
+</div>
+
+<main class="main-body">
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://i.pinimg.com/originals/9b/47/65/9b4765c4efca93f09626c88f499ae061.jpg" alt="Event 1">
+        <h3>Event Title: Food Festival</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://www.wodumedia.com/wp-content/uploads/sites/2/sites/1000016/2018/08/Spring-Break-1200x1647.jpg" alt="Event 2">
+        <h3>Event Title: Spring Break</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://mattbriner.com/wp-content/uploads/2013/12/MidSummer_poster.jpg" alt="Event 3">
+        <h3>Event Title: Summer Fest</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://marketplace.canva.com/EADao61dcMM/1/0/1131w/canva-black-simple-sports-event-poster-GoiXbRR4fcs.jpg" alt="Event 9">
+        <h3>Event Title: Annual Sports Fest</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ec83e457867269.59e6f0b83d931.png" alt="Event 9">
+        <h3>Event Title: Pautakan </h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2016/09/events-poster-1.png" alt="Event 9">
+        <h3>Event Title: Holiday Party</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://i.pinimg.com/originals/26/38/34/263834b1fc3ecb10bbb8052ef68b12c2.jpg" alt="Event 9">
+        <h3>Event Title: Music Fest</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2017/10/event-template-poster-7.png" alt="Event 9">
+        <h3>Event Title: Live Art And Music</h3>
+    </div>
+    <div class="event-card" onclick="window.location.href='event-details.html'">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/14cda14926289.560c6103a2798.png" alt="Event 9">
+        <h3>Event Title: Summer Events</h3>
+    </div>
+</main>
+
+<footer>
+    <div class="contact-info">
+        <p>Email: info@campusconnects.com</p>
+        <p>Phone: +91 7818015799</p>
+        <p>Address:  19th KM Stone, ABES Engineering College, GHAZIABAD(U.P) </p>
+    </div>
+    <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+    <div>
+        <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>
